@@ -1,0 +1,40 @@
+# This theme 'Jekyll-theme' was created by [Stephen Tseng](https://www.ynewtime.com).
+# this theme is pure jekyll theme so you don't need to use bundle
+# instead, just run 'jekyll serve', then visit 127.0.0.1:4000 to check your site offline.
+
+name: 'Y' # put the site's name here
+permalink: /:title # the way you wanna your links look like ==> https://jekyllrb.com/docs/permalinks/
+
+description: "Your site's description" # put your site's description here
+author: "Stephen" # put your name here
+atom-baseurl: "https://your-site-url" # the url for rss feed, you can change it to your site's url
+baseurl: "" # if you aren't publish your blog under permalink like: /blog/, you don't need change this, or change it to /your-repo's-name
+social: "https://twitter.com/your-username" # put your social links here
+
+
+navigations: # the navigation bar, you can create on your own one
+  - title: Archive
+    class: fa fa-list-ul
+    href: /archive
+  - title: Tags
+    class: fa fa-tags
+    href: /tags
+  - title: About
+    class: fa fa-user
+    href: /about
+  - title: Telegram
+    class: fa fa-telegram
+    href: //t.me/Ynewtime_Biki
+  - title: Twitter
+    class: fa fa-twitter
+    href: //twitter.com/Ynewtime
+  - title: Subscribe
+    class: fa fa-rss
+    href: /atom.xml
+
+# Build settings, you don't need to change this
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: true
+exclude: ["README.md"]
