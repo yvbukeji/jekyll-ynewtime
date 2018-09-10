@@ -1,7 +1,7 @@
 ---
 title: 基于 Jekyll 创建你的第一个博客
 layout: post
-date: 2018-09-09
+date: 2018-09-08
 description: "聊聊从头开始一步一步构建你的个人博客"
 tags:
  - 教程
