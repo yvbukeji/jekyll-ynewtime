@@ -178,12 +178,12 @@ Markdown 单行图片：
 #### 响应式视频：
 
 <div class="embed-responsive embed-responsive-16by9">
-<video src="/media/files/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
+<video src="https://t1.aixinxi.net/o_1cclr3epb1cd539u1195tsj1n1ba.mp4" class="embed-responsive-item" controls="controls"></video>
 </div>
 
 ```
 <div class="embed-responsive embed-responsive-16by9">
-<video src="/media/files/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
+<video src="https://t1.aixinxi.net/o_1cclr3epb1cd539u1195tsj1n1ba.mp4" class="embed-responsive-item" controls="controls"></video>
 </div>
 ```
 
