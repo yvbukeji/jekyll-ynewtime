@@ -13,7 +13,7 @@ tags:
 
 1、 [fork](https://github.com/Ynewtime/jekyll-ynewtime) 这个模板；
 
-![]()
+![](/media/files/forkme.png)
 
 2、 修改项目名称；
 
