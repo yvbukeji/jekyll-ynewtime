@@ -1,7 +1,7 @@
 ---
 layout: post
 title: jekyll-ynewtime 主题介绍（1/3）
-day: 2018-09-10 23:00
+date: 2018-09-11
 description: "jekyll-ynewtime 主题的使用入门 | DESIGNED BY Y"
 tags:
  - jekyll
