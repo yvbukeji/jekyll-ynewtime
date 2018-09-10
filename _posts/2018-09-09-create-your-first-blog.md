@@ -45,7 +45,7 @@ tags:
 
 （其实还有另外一种，我在先前的博文中有介绍过的，即基于 [Telegram](/Telegram) 推出的 [Telegrah](/telegraphintro) 匿名文章发布平台构建纯匿名的博客，优点是同样不需要关注 HTML，支持 Youtube、Twitter、Vimeo 等外链的定制样式，支持图片、Gif 和视频上传存储等，开箱即用。缺点是管理需要兼顾多个页面，博文之间的链接逻辑需要自己构建。）
 
-对于自建服务器，比我有经验的站长很多，简单聊聊看法，这种方式的技术成本相对较高，需要对 web 技术栈有较深入的学习。博主在日本的 VPS 上基于 Nginx 构建了一个 [www.ynewtime.com](//www.ynewtime.com) 的镜像站点：[biki.ynewtime.com](//biki.ynewtime.com)，构建完成之后用国人开发的一款便捷的 HTTPS 获取脚本 acme.sh 也给镜像站点加入了 HTTPS 支持，整个过程比较简单，对于手上有闲置、访问正常的 VPS 的小伙伴可以一试，有空的话我之后也会写一篇自建服务器搭建 Jekyll 博客的教程，由于本篇教程面向入门，自建服务器的方法这里就不赘述了。
+对于自建服务器，比我有经验的站长很多，简单聊聊看法，这种方式的技术成本相对较高，需要对 web 技术栈有较深入的学习。博主在日本的 VPS 上基于 Nginx 构建了一个 [www.ynewtime.com](//www.ynewtime.com) 的镜像站点：[biki.ynewtime.com](//biki.ynewtime.com)，构建完成之后用国人开发的一款便捷的 HTTPS 获取脚本 [acme.sh](https://github.com/Neilpang/acme.sh) 也给镜像站点加入了 HTTPS 支持，整个过程比较简单，对于手上有闲置、访问正常的 VPS 的小伙伴可以一试，有空的话我之后也会写一篇自建服务器搭建 Jekyll 博客的教程，由于本篇教程面向入门，自建服务器的方法这里就不赘述了。
 
 另一种方法：在博客平台发布博文，基本不需要什么学习成本，依托于成熟的文章创作平台还有一个优点，即天然拥有该平台的流量入口，易被检索易被收录，曝光率较高，适合单纯文章创作的读者们。国内的博客平台推荐简书，如果是技术博客也可以考虑 CSDN，能够同时被谷歌和百度收录，流量入口有保证。国外的博客平台则推荐 Medium，不过中文文章在 Medium 发布难以保证阅读量，Medium 比较适合英文博文，而且国内无法访问 Medium，需要[科学上网](/科学上网)。感兴趣的读者们可以立即上手了，基本是零成本操作。
 
@@ -74,8 +74,6 @@ tags:
 </div>
 
 <div class="clearfix"></div>
-
-<br>
 
 **Github Pages** 是 Github 推出的代码库个人主页方案，最初面向 Github 上成千上万的代码库，为其提供一个方便的项目展示方案。后来随着 Jekyll 静态站点生成引擎的引入，越来越多的人也借助 Github Pages 来做自己的博客。逻辑上，博主直接将网站的全部文件上传到你的 Github 账号下即可，Github Pages 的生成基本是透明的，只要项目里面有 Jekyll 引擎所需要的配置文件，Github Pages 就可以自动生成，你就可以通过访问对应的域名访问你的博客主页了。**Jekyll** 则是前 Github 创始人之一开发的一个静态站点生成器，架构非常简单，在网站的对应路径添加配置文件，Jekyll 就可以根据这些配置文件自动渲染生成你的博客站点了。
 {:.poem}
@@ -189,4 +187,4 @@ git push
 
 DONE! push 成功之后，你就可以在 `https://你的用户名.github.io` 看到你新创建的博客了。
 
-在此之外，接下来你要做的可能就是，根据你的喜好选择一款主题，因为我们先前用 `jekyll new` 命令创建的主题是博客最原生的一个主题：minima，如果你想要挑选适合你的主题，可以上 Jekyll Theme 的[一些站点](https://jekyllrb.com/resources/)找（Jekyll 官方并没有维护一个主题站点，大多数主题都是第三方的，也有付费的精致主题）。当然，你也完全可以自己创建自己的主题，从零开始定制你的博客样式，学习文章的排版等等，如果你对我的主题感兴趣，欢迎来 fork: [Ynewtime](//github.com/Ynewtime/jekyll-theme).
+在此之外，接下来你要做的可能就是，根据你的喜好选择一款主题，因为我们先前用 `jekyll new` 命令创建的主题是博客最原生的一个主题：minima，如果你想要挑选适合你的主题，可以上 Jekyll Theme 的[一些站点](https://jekyllrb.com/resources/)找（Jekyll 官方并没有维护一个主题站点，大多数主题都是第三方的，也有付费的精致主题）。当然，你也完全可以自己创建自己的主题，从零开始定制你的博客样式，学习文章的排版等等，如果你对我的主题感兴趣，欢迎来 fork: [Ynewtime](//github.com/Ynewtime/jekyll-ynewtime).
