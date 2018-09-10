@@ -9,7 +9,7 @@ tags:
 
 ![](/media/files/da-kraplak.jpg)*Photo by Da Kraplak on Unsplash*
 
-> 轩墨染于荧屏、分寸尽是感动。
+> 轩墨染于荧屏、方寸尽是感动。
 
 ---
 
@@ -45,9 +45,9 @@ tags:
 
 （其实还有另外一种，我在先前的博文中有介绍过的，即基于 [Telegram](/Telegram) 推出的 [Telegrah](/telegraphintro) 匿名文章发布平台构建纯匿名的博客，优点是同样不需要关注 HTML，支持 Youtube、Twitter、Vimeo 等外链的定制样式，支持图片、Gif 和视频上传存储等，开箱即用。缺点是管理需要兼顾多个页面，博文之间的链接逻辑需要自己构建。）
 
-对于自建服务器，比我有经验的站长很多，简单聊聊看法，这种方式的技术成本相对较高，需要对 web 技术栈有较深入的学习。博主在日本的 VPS 上基于 Nginx 构建了一个 [www.ynewtime.com](//www.ynewtime.com) 的镜像站点：[biki.ynewtime.com](//biki.ynewtime.com)，构建完成之后用国人开发的一款便捷的 HTTPS 获取脚本 [acme.sh](https://github.com/Neilpang/acme.sh) 也给镜像站点加入了 HTTPS 支持，整个过程比较简单，对于手上有闲置、访问正常的 VPS 的小伙伴可以一试，有空的话我之后也会写一篇自建服务器搭建 Jekyll 博客的教程，由于本篇教程面向入门，自建服务器的方法这里就不赘述了。
+对于自建服务器，比我有经验的站长很多，简单聊聊看法，这种方式的技术成本相对较高，需要对 web 技术栈有较深入的学习。博主在日本的 VPS 上基于 Nginx 构建了一个 [www.ynewtime.com](//www.ynewtime.com) 的镜像站点，构建完成之后用国人开发的一款便捷的 HTTPS 获取脚本 [acme.sh](https://github.com/Neilpang/acme.sh) 也给镜像站点加入了 HTTPS 支持，整个过程比较简单，对于手上有闲置、访问正常的 VPS 的小伙伴可以一试，有空的话我之后也会写一篇自建服务器搭建 Jekyll 博客的教程，由于本篇教程面向入门，自建服务器的方法这里就不赘述了。
 
-另一种方法：在博客平台发布博文，基本不需要什么学习成本，依托于成熟的文章创作平台还有一个优点，即天然拥有该平台的流量入口，易被检索易被收录，曝光率较高，适合单纯文章创作的读者们。国内的博客平台推荐简书，如果是技术博客也可以考虑 CSDN，能够同时被谷歌和百度收录，流量入口有保证。国外的博客平台则推荐 Medium，不过中文文章在 Medium 发布难以保证阅读量，Medium 比较适合英文博文，而且国内无法访问 Medium，需要[科学上网](/科学上网)。感兴趣的读者们可以立即上手了，基本是零成本操作。
+另一种方法：在博客平台发布博文，基本不需要什么学习成本，依托于成熟的文章创作平台还有一个优点，即天然拥有该平台的流量入口，易被检索易被收录，曝光率较高，适合单纯文章创作的读者们。国内的博客平台推荐简书，如果是技术博客也可以考虑 CSDN，能够同时被谷歌和百度收录，流量入口有保证。国外的博客平台则推荐 Medium，不过中文文章在 Medium 发布难以保证阅读量，Medium 比较适合英文博文，而且国内无法访问 Medium，需要[科学上网](https://www.ynewtime.com/科学上网)。感兴趣的读者们可以立即上手了，基本是零成本操作。
 
 接下来我们主要聊聊在托管平台发布博客的方式。这种方式多数是这样实现的：“ 托管平台（如知名代码库：Github、Gitlab 和 Coding） + SSG（静态站点生成器，如 Jekyll、Hexo） ”。大多数人选择的方式是 **Github Pages** + **Jekyll** 的方式，我们首先介绍一下这两者：
 
@@ -105,7 +105,7 @@ tags:
 
 ![](/media/files/git-clone.png)
 
-正如你所看到的，最开始的目录只有两个文件，`.git` 文件夹是 git 仓库的默认文件夹，README.md 则是仓库的示例文件：
+正如你所看到的，最开始的目录只有一个 `.git` 文件夹（ git 仓库的默认文件夹），和一个 README.md 文件（仓库的示例文件）：
 
 ```
 .
@@ -122,7 +122,17 @@ tags:
 运行 `ruby -v` 确认本地的 ruby 环境大于 2.3.3，接着运行 `gem install bundler jekyll` 安装 Jekyll 环境。如果 ruby 环境小于 2.3.3 或者你希望更新到最新版本的 ruby，可以参考[官方的教程](https://jekyllrb.com/docs/installation/macos/)。
 {:.poem}
 
-对于 Linux 用户，请戳：[官方的教程](https://jekyllrb.com/docs/installation/) （因为对于 Linux 用户来说这些都是小 case 了
+对于 Linux 用户，请戳：[官方的教程](https://jekyllrb.com/docs/installation/) （因为对于 Linux 用户来说这些都是小 case 了。如果是 Ubuntu 用户，总结一下其实就是这几条命令，跑一遍就可以了：
+
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt-get install ruby ruby-dev build-essential
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
+echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+gem install jekyll bundler
+```
 
 我们重点聊聊 Windows 下的 jekyll 配置。
 
@@ -135,7 +145,7 @@ tags:
 按 `win`{:.key} + `R`{:.key} 输入 cmd 打开命令行界面，输入 `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux` 开启 sublinux 特性。重启电脑。接着，进入 Windwos store 官方应用商店，查找 Linux，选择你喜欢的发行版（推荐 Ubuntu 18.04），安装即可。
 {:.poem}
 
-（在正式启用之前还需要配置一下 Windows sublinux 的用户名和密码）成功之后，我们按照 Jekyll for Linux 的[官方的教程](https://jekyllrb.com/docs/installation/) 在 sublinux 系统里面安装 Jekyll。对于 Ubuntu 用户，总结一下其实就是这几条命令，跑一遍就可以了：
+（在正式启用之前还需要配置一下 Windows sublinux 的用户名和密码）成功之后，我们按照 Jekyll for Linux 的[官方的教程](https://jekyllrb.com/docs/installation/) 在 sublinux 系统里面安装 Jekyll。同样的，对于 Ubuntu 用户，跑一遍下面的命令即可：
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -187,4 +197,4 @@ git push
 
 DONE! push 成功之后，你就可以在 `https://你的用户名.github.io` 看到你新创建的博客了。
 
-在此之外，接下来你要做的可能就是，根据你的喜好选择一款主题，因为我们先前用 `jekyll new` 命令创建的主题是博客最原生的一个主题：minima，如果你想要挑选适合你的主题，可以上 Jekyll Theme 的[一些站点](https://jekyllrb.com/resources/)找（Jekyll 官方并没有维护一个主题站点，大多数主题都是第三方的，也有付费的精致主题）。当然，你也完全可以自己创建自己的主题，从零开始定制你的博客样式，学习文章的排版等等，如果你对我的主题感兴趣，欢迎来 fork: [Ynewtime](//github.com/Ynewtime/jekyll-ynewtime).
+接下来你要做的就是，根据你的喜好选择一款主题，因为我们先前用 `jekyll new` 命令创建的主题是博客最原生的一个主题：minima，如果你想要挑选适合你的主题，可以上 Jekyll 的[一些主题站点](https://jekyllrb.com/resources/)找（Jekyll 官方并没有维护一个主题站点，大多数主题都是第三方的，网上也有付费的精致主题）。当然，你也完全可以自己创建自己的主题，从零开始定制你的博客样式，学习文章的排版等等，如果你对我的主题感兴趣，欢迎来 fork: [Ynewtime](//github.com/Ynewtime/jekyll-ynewtime).

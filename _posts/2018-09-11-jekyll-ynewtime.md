@@ -7,7 +7,7 @@ tags:
  - jekyll
 ---
 
-**jekyll-ynewtime** 是一款简约设计的博客模板。
+**jekyll-ynewtime** 是一款简约设计的博客模板（&copy;Y）。
 
 ## 安装
 
@@ -108,7 +108,7 @@ A: Good question! There aren't enough buses on this road, sometimes...
 
 Markdown 单行图片：
 
-![](/media/files/gakki.jpg)*ガッキーさんです*
+[![](/media/files/gakki.jpg)*ガッキーさんです*](/media/files/gakki.jpg)
 
 ```
 ![](/media/files/gakki.jpg)*ガッキーさんです*
