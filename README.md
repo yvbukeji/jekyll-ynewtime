@@ -40,4 +40,4 @@ social: "https://twitter.com/your-username" # put your social links here
 
 ## 更多特性
 
-见 [DEMO](https://biki.ynewtime.com) 
+见 [DEMO](https://biki.ml) 

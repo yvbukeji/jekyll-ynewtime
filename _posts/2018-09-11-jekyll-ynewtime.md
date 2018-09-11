@@ -110,7 +110,7 @@ A: Good question! There aren't enough buses on this road, sometimes...
 
 Markdown 单行图片：
 
-[![](/media/files/gakki.jpg)*ガッキーさんです*](/media/files/gakki.jpg)
+![](/media/files/gakki.jpg)*ガッキーさんです*
 
 ```
 ![](/media/files/gakki.jpg)*ガッキーさんです*
@@ -118,10 +118,10 @@ Markdown 单行图片：
 
 UNSPLASH 随机图片：
 
-<a href='' target="_self"><img src="https://source.unsplash.com/random" alt="UNSPLASH RANDOM PHOTO"><em>UNSPLASH RANDOM PHOTO</em></a>
+<img src="https://source.unsplash.com/random" alt="UNSPLASH RANDOM PHOTO"><em>UNSPLASH RANDOM PHOTO</em>
 
 ```
-<a href='' target="_self"><img src="https://source.unsplash.com/random" alt="UNSPLASH RANDOM PHOTO"><em>UNSPLASH RANDOM PHOTO</em></a>
+<img src="https://source.unsplash.com/random" alt="UNSPLASH RANDOM PHOTO"><em>UNSPLASH RANDOM PHOTO</em>
 ```
 
 并列图片：
