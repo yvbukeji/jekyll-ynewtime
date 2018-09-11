@@ -197,4 +197,4 @@ git push
 
 DONE! push 成功之后，你就可以在 `https://你的用户名.github.io` 看到你新创建的博客了。
 
-接下来你要做的就是，根据你的喜好选择一款主题，因为我们先前用 `jekyll new` 命令创建的主题是博客最原生的一个主题：minima，如果你想要挑选适合你的主题，可以上 Jekyll 的[一些主题站点](https://jekyllrb.com/resources/)找（Jekyll 官方并没有维护一个主题站点，大多数主题都是第三方的，网上也有付费的精致主题）。当然，你也完全可以自己创建自己的主题，从零开始定制你的博客样式，学习文章的排版等等，如果你对我的主题感兴趣，欢迎来 fork: [Ynewtime](//github.com/Ynewtime/jekyll-ynewtime).
+接下来你要做的就是，根据你的喜好选择一款主题，因为我们先前用 `jekyll new` 命令创建的主题是博客最原生的一个主题：minima，如果你想要挑选适合你的主题，可以上 Jekyll 的[一些主题站点](https://jekyllrb.com/resources/)找（Jekyll 官方并没有维护一个主题站点，大多数主题都是第三方的，网上也有付费的精致主题）。当然，你也完全可以自己创建自己的主题，从零开始定制你的博客样式，学习文章的排版等等，如果你对我的主题感兴趣，欢迎来 fork: [jekyll-ynewtime](//github.com/Ynewtime/jekyll-ynewtime).

@@ -7,7 +7,9 @@ tags:
  - jekyll
 ---
 
-**jekyll-ynewtime** 是一款简约设计的博客模板（&copy;Y）。
+[jekyll-ynewtime](//github.com/Ynewtime/jekyll-ynewtime) 是一款简约设计的博客模板（&copy;Y）。
+
+![](/media/files/intro-1.png)
 
 ## 安装
 
@@ -114,6 +116,14 @@ Markdown 单行图片：
 ![](/media/files/gakki.jpg)*ガッキーさんです*
 ```
 
+UNSPLASH 随机图片：
+
+<a href='' target="_self"><img src="https://source.unsplash.com/random" alt="UNSPLASH RANDOM PHOTO"><em>UNSPLASH RANDOM PHOTO</em></a>
+
+```
+<a href='' target="_self"><img src="https://source.unsplash.com/random" alt="UNSPLASH RANDOM PHOTO"><em>UNSPLASH RANDOM PHOTO</em></a>
+```
+
 并列图片：
 
 <div class="responsive">
@@ -178,12 +188,12 @@ Markdown 单行图片：
 #### 响应式视频：
 
 <div class="embed-responsive embed-responsive-16by9">
-<video src="https://t1.aixinxi.net/o_1cclr3epb1cd539u1195tsj1n1ba.mp4" class="embed-responsive-item" controls="controls"></video>
+<video src="/media/files/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
 </div>
 
 ```
 <div class="embed-responsive embed-responsive-16by9">
-<video src="https://t1.aixinxi.net/o_1cclr3epb1cd539u1195tsj1n1ba.mp4" class="embed-responsive-item" controls="controls"></video>
+<video src="/media/files/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
 </div>
 ```
 
@@ -198,3 +208,10 @@ $$ E = M C^2 $$
 
 $$ z = \frac{x}{y} $$ 
 ```
+
+### 更多
+
+1. [jekyll-ynewtime 主题介绍（1/3）](/jekyll-ynewtime)
+2. [jekyll-ynewtime 主题外链嵌入测试（2/3）](/media)
+3. [jekyll-ynewtime 主题自定义样式（3/3）](/custom)
+{:.poem}
