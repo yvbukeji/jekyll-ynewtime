@@ -9,7 +9,11 @@ tags:
 
 [jekyll-ynewtime](//github.com/Ynewtime/jekyll-ynewtime) 是一款简约设计的博客模板（&copy;Y）。
 
-![](/media/files/intro-1.png)
+![](/media/files/intro-1.png){:.small}
+{:.poem}
+
+![](/media/files/display.png){:.small}
+{:.poem}
 
 ## 安装
 
