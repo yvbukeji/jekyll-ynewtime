@@ -209,13 +209,5 @@ $$ z = \frac{x}{y} $$
 
 ```
 $$ E = M C^2 $$
-
 $$ z = \frac{x}{y} $$ 
 ```
-
-### 更多
-
-1. [jekyll-ynewtime 主题介绍（1/3）](/jekyll-ynewtime)
-2. [jekyll-ynewtime 主题外链嵌入测试（2/3）](/media)
-3. [jekyll-ynewtime 主题自定义样式（3/3）](/custom)
-{:.poem}

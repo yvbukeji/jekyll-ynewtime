@@ -1,6 +1,7 @@
+# MIT LICENSE | https://opensource.org/licenses/MIT
 # This theme 'Jekyll-theme' was created by [Stephen Tseng](https://www.ynewtime.com).
-# this theme is pure jekyll theme so you don't need to use bundle
-# instead, just run 'jekyll serve', then visit 127.0.0.1:4000 to check your site offline.
+# This theme is pure jekyll theme so you don't need to use bundle
+# Instead, just run 'jekyll serve', then visit 127.0.0.1:4000 to check your site offline.
 
 name: 'Y' # put the site's name here
 permalink: /:title # the way you wanna your links look like ==> https://jekyllrb.com/docs/permalinks/
@@ -10,9 +11,10 @@ author: "Stephen" # put your name here
 atom-baseurl: "https://your-site-url" # the url for rss feed, you can change it to your site's url
 baseurl: "" # if you aren't publish your blog under permalink like: /blog/, you don't need change this, or change it to /your-repo's-name
 social: "https://twitter.com/your-username" # put your social links here
+GA: "" # If you have a Google analytics account available, put your site's id here
 
-
-navigations: # the navigation bar, you can create on your own one
+# the navigation bar, you can create your own one
+navigations: 
   - title: Archive
     class: fa fa-list-ul
     href: /archive
@@ -22,13 +24,13 @@ navigations: # the navigation bar, you can create on your own one
   - title: About
     class: fa fa-user
     href: /about
-  - title: Telegram
+  - title: Telegram # if you don't have a telegram account, you can just delete this section
     class: fa fa-telegram
     href: //t.me/Ynewtime_Biki
-  - title: Twitter
+  - title: Twitter # if you don't have a twitter account, you can just delete this section
     class: fa fa-twitter
     href: //twitter.com/Ynewtime
-  - title: Subscribe
+  - title: Subscribe # if you don't want to enable RSS, you can just delete this section
     class: fa fa-rss
     href: /atom.xml
 
