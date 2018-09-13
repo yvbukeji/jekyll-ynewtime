@@ -12,6 +12,7 @@ atom-baseurl: "https://your-site-url" # the url for rss feed, you can change it 
 baseurl: "" # if you aren't publish your blog under permalink like: /blog/, you don't need change this, or change it to /your-repo's-name
 social: "https://twitter.com/your-username" # put your social links here
 GA: "" # If you have a Google analytics account available, put your site's id here
+# kitID: "" # If you have an adobe fonts kit, put it here.
 
 # the navigation bar, you can create your own one
 navigations: 
