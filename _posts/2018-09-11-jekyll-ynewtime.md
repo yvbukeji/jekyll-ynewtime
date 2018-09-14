@@ -9,12 +9,6 @@ tags:
 
 [jekyll-ynewtime](//github.com/Ynewtime/jekyll-ynewtime) 是一款简约设计的博客模板（&copy;Y）。
 
-![](/media/files/WEBP/intro-1.webp){:.small}
-{:.poem}
-
-![](/media/files/WEBP/display.webp){:.small}
-{:.poem}
-
 ## 安装
 
 1、 [fork](https://github.com/Ynewtime/jekyll-ynewtime) 这个模板；
