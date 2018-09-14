@@ -2,19 +2,19 @@
 
 基于 Jekyll 的一个开源主题。示例见：[DEMO](https://biki.ml/)
 
-![](/media/files/WEBP/intro-1.png)
+![](/media/files/WEBP/intro-1.webp)
 
 👆 首页
 
-![](/media/files/WEBP/intro-2.png)
+![](/media/files/WEBP/intro-2.webp)
 
 👆 归档页
 
-![](/media/files/WEBP/intro-3.png)
+![](/media/files/WEBP/intro-3.webp)
 
 👆 标签页
 
-![](/media/files/WEBP/intro-4.png)
+![](/media/files/WEBP/intro-4.webp)
 
 👆 介绍页
 
