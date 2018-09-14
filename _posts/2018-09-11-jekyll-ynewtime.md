@@ -9,17 +9,17 @@ tags:
 
 [jekyll-ynewtime](//github.com/Ynewtime/jekyll-ynewtime) 是一款简约设计的博客模板（&copy;Y）。
 
-![](/media/files/intro-1.png){:.small}
+![](/media/files/WEBP/intro-1.webp){:.small}
 {:.poem}
 
-![](/media/files/display.png){:.small}
+![](/media/files/WEBP/display.webp){:.small}
 {:.poem}
 
 ## 安装
 
 1、 [fork](https://github.com/Ynewtime/jekyll-ynewtime) 这个模板；
 
-![](/media/files/forkme.png)
+![](/media/files/WEBP/forkme.webp)
 
 2、 修改项目名称；
 
@@ -114,10 +114,10 @@ A: Good question! There aren't enough buses on this road, sometimes...
 
 Markdown 单行图片：
 
-![](/media/files/gakki.jpg)*ガッキーさんです*
+![](/media/files/WEBP/gakki.jpg)*ガッキーさんです*
 
 ```
-![](/media/files/gakki.jpg)*ガッキーさんです*
+![](/media/files/WEBP/gakki.jpg)*ガッキーさんです*
 ```
 
 UNSPLASH 随机图片：
@@ -132,8 +132,8 @@ UNSPLASH 随机图片：
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/zhihu-1.jpg">
-      <img src="/media/files/zhihu-1.jpg" alt="并列图片1">
+    <a href="/media/files/WEBP/zhihu-1.jpg">
+      <img src="/media/files/WEBP/zhihu-1.jpg" alt="并列图片1">
     </a>
     <div class="desc">
       并列图片1
@@ -143,8 +143,8 @@ UNSPLASH 随机图片：
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/zhihu-2.jpg">
-      <img src="/media/files/zhihu-2.jpg" alt="并列图片2">
+    <a href="/media/files/WEBP/zhihu-2.jpg">
+      <img src="/media/files/WEBP/zhihu-2.jpg" alt="并列图片2">
     </a>
     <div class="desc">
       并列图片2
@@ -157,8 +157,8 @@ UNSPLASH 随机图片：
 ```html
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/zhihu-1.jpg">
-      <img src="/media/files/zhihu-1.jpg" alt="并列图片1">
+    <a href="/media/files/WEBP/zhihu-1.jpg">
+      <img src="/media/files/WEBP/zhihu-1.jpg" alt="并列图片1">
     </a>
     <div class="desc">
       并列图片1
@@ -168,8 +168,8 @@ UNSPLASH 随机图片：
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/zhihu-2.jpg">
-      <img src="/media/files/zhihu-2.jpg" alt="并列图片2">
+    <a href="/media/files/WEBP/zhihu-2.jpg">
+      <img src="/media/files/WEBP/zhihu-2.jpg" alt="并列图片2">
     </a>
     <div class="desc">
       并列图片2
@@ -183,21 +183,21 @@ UNSPLASH 随机图片：
 
 #### Gif：
 
-![](/media/files/google10.gif)
+![](/media/files/GIF/google10.gif)
 
 ```
-![](/media/files/google10.gif)
+![](/media/files/GIF/google10.gif)
 ```
 
 #### 响应式视频：
 
 <div class="embed-responsive embed-responsive-16by9">
-<video src="/media/files/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
+<video src="/media/files/MP4/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
 </div>
 
 ```
 <div class="embed-responsive embed-responsive-16by9">
-<video src="/media/files/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
+<video src="/media/files/MP4/telegramX.mp4" class="embed-responsive-item" controls="controls"></video>
 </div>
 ```
 

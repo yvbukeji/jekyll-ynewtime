@@ -7,7 +7,7 @@ tags:
  - 教程
 ---
 
-![](/media/files/da-kraplak.jpg)*Photo by Da Kraplak on Unsplash*
+![](/media/files/WEBP/da-kraplak.jpg)*Photo by Da Kraplak on Unsplash*
 
 > 轩墨染于荧屏、方寸尽是感动。
 
@@ -19,7 +19,7 @@ tags:
 
 ## 谈编辑器
 
-![](/media/files/code1-27-1.png)
+![](/media/files/WEBP/code1-27-1.png)
 
 教程开始之前插播一段题外话：最近 09-06 VScode 发布了界面可供定制（ custom ）的 1.27.1 版本，全新的应用体验让 VScode 这款本就精致快捷的编辑器焕发出新的光彩，如果你厌倦了 Atom 的繁重和迟钝，又希望有能实时跟终端交互，插件丰富，上手简单的一款漂亮的编辑器，VScode 绝对是一个不错的选择。
 
@@ -53,8 +53,8 @@ tags:
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/pages.png">
-      <img src="/media/files/pages.png" alt="GITHUB PAGES">
+    <a href="/media/files/WEBP/pages.png">
+      <img src="/media/files/WEBP/pages.png" alt="GITHUB PAGES">
     </a>
     <div class="desc">
       <a href="//pages.github.com">GITHUB PAGES</a>
@@ -64,8 +64,8 @@ tags:
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/jekyll.png">
-      <img src="/media/files/jekyll.png" alt="JEKYLLRB.COM">
+    <a href="/media/files/WEBP/jekyll.png">
+      <img src="/media/files/WEBP/jekyll.png" alt="JEKYLLRB.COM">
     </a>
     <div class="desc">
       <a href="//jekyllrb.com">JEKYLL</a>
@@ -95,15 +95,15 @@ tags:
 
 登录你的 Github 账号，创建一个新的代码库（ Repository ），命名为：`你的用户名.github.io`（如：ynewtime.github.io）👇
 
-![](/media/files/jekyll-repo.png)
+![](/media/files/WEBP/jekyll-repo.png)
 
 最开始代码库只有一个 README.md 文件，这个文件是代码库的示例文件，你可以把它理解为 repo 的导航页，用来展示该 repo 的相关事项👇
 
-![](/media/files/repo-1.png)
+![](/media/files/WEBP/repo-1.png)
 
 接着，我们用 Git 把这个 repo 导入到本地👇
 
-![](/media/files/git-clone.png)
+![](/media/files/WEBP/git-clone.png)
 
 正如你所看到的，最开始的目录只有一个 `.git` 文件夹（ git 仓库的默认文件夹），和一个 README.md 文件（仓库的示例文件）：
 
@@ -136,7 +136,7 @@ gem install jekyll bundler
 
 我们重点聊聊 Windows 下的 jekyll 配置。
 
-![](/media/files/sublinux.png)
+![](/media/files/WEBP/sublinux.png)
 
 #### WSL 大法好
 
@@ -185,7 +185,7 @@ Jekyll 的文件夹树：
 
 在命令行运行：`bundle exec jekyll server`，在浏览器输入`127.0.0.1:4000`，你就可以看到你的第一个 Jekyll 站点啦
 
-![](/media/files/jekyll-new.png)
+![](/media/files/WEBP/jekyll-new.png)
 
 上面的命令会启动 Jekyll 自带的网站引擎，生成一个本地的站点预览，如果要退出，按 `ctrl`{:.key} + `C`{:.key} 即可。接着，我们把生成好的博客 push 到我们最先创建的 Github 仓库：
 
