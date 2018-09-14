@@ -42,10 +42,22 @@ social: "https://twitter.com/your-username" # put your social links here
 
 ### 📕 关于字体
 
-字体按衬体和非衬体分成了两个场景，并综合考虑了美观性、中文字体字库庞大的问题、日文字体兼容和网页动态渲染的延迟问题，最终确定了 font-family，其中，衬体（serif）的 font-family 如下：
+![](/media/files/WEBP/tenmincho-fonts2.webp)*貂明朝字体*
+
+#### 字体选型
+
+Jekyll-ynewtime 主题的字体一直很难选择，需要兼顾的方面很多，在文章中一般会涉及中英文字体，而中文字体字库过于庞大，因此从网页加载速度的角度考虑，需要优先选用系统自建的字体。英文一般系统内置，选用的时候只要注意不同模块，如正文和导航栏、底部栏的区分即可，还有代码块的 monospace 字体选择，也是需要单拿出来考虑。
+
+在设计原则上，我优先选用了开源的泛中日韩 Source Han 字体，这款字体优雅、大方，背后是[ Google 的大力支持和 Adobe 公司的精心研发](https://source.typekit.com/source-han-serif/cn/)，在字体的呈现效果上是非常理想的（serif，正文）。对于日文字体，我选择了由主持过思源字体开发的 Adobe 日本首席字体设计师 Ryoko Nishizuka（西塚涼子）所设计的[貂明朝](https://typekit.com/fonts/ten-mincho)字体（serif，正文），这款字体‘浓墨重彩’，在笔画勾绘的细节处传神生动，颇具‘貂’的意味。关于貂明朝字体，你可以在[ Fate/Typo 知名字体博客](https://fatetypo.xyz/ten-mincho/)上了解更多技术细节。代码块的字体则选择了 Github 上开源的混改版‘Consolas with Yahei’作为主要的字体集。除了主字体集的选用之外，兼顾不同系统字体的适配原则是：英文 > 中文; 系统自带 > 动态加载。
+
+![](/media/files/WEBP/tenmincho-fonts1.webp)*貂明朝字体效果*
+
+#### 方案确定
+
+字体的选用根据上述逻辑，按衬体和非衬体分成了两个场景，并综合考虑了美观性、中文字体字库庞大的问题、日文字体兼容和网页动态渲染的延迟问题，最终确定了 font-family，其中，衬体（serif）的 font-family 如下：
 
 ```
-$font-serif: 'Noto Serif CJK SC', 'Noto Serif CJK', "Source Han Serif", "Source Han Serif SC", "source-han-serif-sc", "PingFang SC", "ten-mincho", SimSun, "宋体";
+$font-serif: 'Noto Serif CJK SC', 'Noto Serif CJK', "Source Han Serif SC", "source-han-serif-sc", "PingFang SC", "ten-mincho", "Source Han Serif", SimSun, "宋体";
 ```
 
 上述衬体字体的顺序逻辑是：（1）优先选用 Noto 或 Source Han 的简体中文集（需要系统支持）；（2）如果系统中没有这两类字体，则尝试动态加载 Adobe 的 source-han-serif-sc 字体（需要配置 _config.yml）（3）若动态加载失败，对于 MacOS 系统，优先考虑系统自带的平方字体；（4）对于 Win 或 Android，则尝试动态加载 Adobe 的 ten-mincho 字体；（5）若上述全部加载失败，回落到宋体，或系统默认简体中文字体。
@@ -72,7 +84,7 @@ $font-sans: Consolas,Georgia,Helvetica,Tahoma,Arial,'Noto Sans CJK SC','Noto San
 都把它放在 media/files 这个文件夹里，然后呢  
 在博客写完，要提交到远程仓库或者服务器之前  
 只要进入 media/files/BATCH 文件夹里，用 wsl（win）或 terminal（Linux or mac）跑一遍 file_to_webp.sh  
-就可以自动整理你放进来的所有类型的文件啦，所有文件会归类到命名好的文件夹里
+就可以自动整理你放进来的所有类型的文件啦，所有文件会归类到命名好的文件夹里  
 转换视频也是可以的，不过不推荐啦，所以脚本没有默认启用  
 这个脚本的依赖主要有两个：FFmpeg（用来转换 gif 为 webm 格式）和 classifier（用来整理文件）  
 因此，如果你的 Linux 环境里面没有这两个包，需要先安装，附安装方法：  
