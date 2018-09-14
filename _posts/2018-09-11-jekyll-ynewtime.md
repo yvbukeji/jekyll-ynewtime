@@ -114,10 +114,10 @@ A: Good question! There aren't enough buses on this road, sometimes...
 
 Markdown 单行图片：
 
-![](/media/files/WEBP/gakki.jpg)*ガッキーさんです*
+![](/media/files/WEBP/gakki.webp)*ガッキーさんです*
 
 ```
-![](/media/files/WEBP/gakki.jpg)*ガッキーさんです*
+![](/media/files/WEBP/gakki.webp)*ガッキーさんです*
 ```
 
 UNSPLASH 随机图片：
@@ -132,8 +132,8 @@ UNSPLASH 随机图片：
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/WEBP/zhihu-1.jpg">
-      <img src="/media/files/WEBP/zhihu-1.jpg" alt="并列图片1">
+    <a href="/media/files/WEBP/zhihu-1.webp">
+      <img src="/media/files/WEBP/zhihu-1.webp" alt="并列图片1">
     </a>
     <div class="desc">
       并列图片1
@@ -143,8 +143,8 @@ UNSPLASH 随机图片：
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/WEBP/zhihu-2.jpg">
-      <img src="/media/files/WEBP/zhihu-2.jpg" alt="并列图片2">
+    <a href="/media/files/WEBP/zhihu-2.webp">
+      <img src="/media/files/WEBP/zhihu-2.webp" alt="并列图片2">
     </a>
     <div class="desc">
       并列图片2
@@ -157,8 +157,8 @@ UNSPLASH 随机图片：
 ```html
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/WEBP/zhihu-1.jpg">
-      <img src="/media/files/WEBP/zhihu-1.jpg" alt="并列图片1">
+    <a href="/media/files/WEBP/zhihu-1.webp">
+      <img src="/media/files/WEBP/zhihu-1.webp" alt="并列图片1">
     </a>
     <div class="desc">
       并列图片1
@@ -168,8 +168,8 @@ UNSPLASH 随机图片：
 
 <div class="responsive">
   <div class="img">
-    <a href="/media/files/WEBP/zhihu-2.jpg">
-      <img src="/media/files/WEBP/zhihu-2.jpg" alt="并列图片2">
+    <a href="/media/files/WEBP/zhihu-2.webp">
+      <img src="/media/files/WEBP/zhihu-2.webp" alt="并列图片2">
     </a>
     <div class="desc">
       并列图片2

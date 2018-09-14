@@ -2,23 +2,23 @@
 
 基于 Jekyll 的一个开源主题。示例见：[DEMO](https://biki.ml/)
 
-![](/media/files/intro-1.png)
+![](/media/files/WEBP/intro-1.png)
 
 👆 首页
 
-![](/media/files/intro-2.png)
+![](/media/files/WEBP/intro-2.png)
 
 👆 归档页
 
-![](/media/files/intro-3.png)
+![](/media/files/WEBP/intro-3.png)
 
 👆 标签页
 
-![](/media/files/intro-4.png)
+![](/media/files/WEBP/intro-4.png)
 
 👆 介绍页
 
-## 安装
+## 🔨 安装
 
 1、 [fork](https://github.com/Ynewtime/jekyll-ynewtime) 这个模板；
 
@@ -38,9 +38,9 @@ baseurl: "" # if you aren't publish your blog under permalink like: /blog/, you 
 social: "https://twitter.com/your-username" # put your social links here
 ```
 
-## 更多特性
+## 🔨 更多特性
 
-### 关于字体
+### 📕 关于字体
 
 字体按衬体和非衬体分成了两个场景，并综合考虑了美观性、中文字体字库庞大的问题、日文字体兼容和网页动态渲染的延迟问题，最终确定了 font-family，其中，衬体（serif）的 font-family 如下：
 
@@ -62,7 +62,7 @@ $font-sans: Consolas,Georgia,Helvetica,Tahoma,Arial,'Noto Sans CJK SC','Noto San
 
 对于 Jekyll-ynewtime 主题，非衬体的应用场景是：（1）顶部导航栏；（2）分隔符；（3）底部 footer。
 
-### 自动化图片/ Gif 压缩和整理脚本 file_to_webp.sh
+### 📕 自动化图片/ Gif 压缩和整理脚本 file_to_webp.sh
 
 考虑到先前网页加载时图片和 gif 所消耗的大量带宽，因此专门写了一个自动化脚本，对博客的图片和 gif 进行预处理，批量转化为 webp 或 webm 格式，并根据文件类型自动整理到对应的文件夹。
 
@@ -73,12 +73,12 @@ $font-sans: Consolas,Georgia,Helvetica,Tahoma,Arial,'Noto Sans CJK SC','Noto San
 在博客写完，要提交到远程仓库或者服务器之前  
 只要进入 media/files/BATCH 文件夹里，用 wsl（win）或 terminal（Linux or mac）跑一遍 file_to_webp.sh  
 就可以自动整理你放进来的所有类型的文件啦，所有文件会归类到命名好的文件夹里
-转换视频也是可以的，不过不推荐啦，所以脚本没有默认启用
+转换视频也是可以的，不过不推荐啦，所以脚本没有默认启用  
 这个脚本的依赖主要有两个：FFmpeg（用来转换 gif 为 webm 格式）和 classifier（用来整理文件）  
 因此，如果你的 Linux 环境里面没有这两个包，需要先安装，附安装方法：  
 FFmpeg: `sudo apt install FFmpeg` （没错就是包管理器2333，Ubuntu大法好）  
 classifier: `pip install classifier` （python环境需要你自己检查一下，python3是可以的）
 
-### 样式细节
+### 📕 样式细节
 
 详见 [DEMO](https://biki.ml) 
