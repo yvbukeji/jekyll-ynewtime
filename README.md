@@ -46,6 +46,8 @@ social: "https://twitter.com/your-username" # put your social links here
 
 #### 字体选型
 
+**2018-09-27** 更新：结合 Github 上的热门项目 [fonts.css](https://zenozeng.github.io/fonts.css/) 重新调整了博客字体设置，主字体采用黑体，强调样式使用楷体，引用字体则用 Adobe 的思源宋体，code 为了保持等宽样式使用了同样来自 Github 的 [Yahei-Consolas-Hybrid](https://github.com/yakumioto/YaHei-Consolas-Hybrid-1.12)，而图片的注释字体则定制了徐静蕾的手写体：方正静蕾简体。
+
 Jekyll-ynewtime 主题的字体一直很难选择，需要兼顾的方面很多，在文章中一般会涉及中英文字体，而中文字体字库过于庞大，因此从网页加载速度的角度考虑，需要优先选用系统自建的字体。英文一般系统内置，选用的时候只要注意不同模块，如正文和导航栏、底部栏的区分即可，还有代码块的 monospace 字体选择，也是需要单拿出来考虑。
 
 在设计原则上，我优先选用了开源的泛中日韩 Source Han 字体，这款字体优雅、大方，背后是[ Google 的大力支持和 Adobe 公司的精心研发](https://source.typekit.com/source-han-serif/cn/)，在字体的呈现效果上是非常理想的（serif，正文）。对于日文字体，我选择了由主持过思源字体开发的 Adobe 日本首席字体设计师 Ryoko Nishizuka（西塚涼子）所设计的[貂明朝](https://typekit.com/fonts/ten-mincho)字体（serif，正文），这款字体‘浓墨重彩’，在笔画勾绘的细节处传神生动，颇具‘貂’的意味。关于貂明朝字体，你可以在[ Fate/Typo 知名字体博客](https://fatetypo.xyz/ten-mincho/)上了解更多技术细节。代码块的字体则选择了 Github 上开源的混改版‘Consolas with Yahei’作为主要的字体集。除了主字体集的选用之外，兼顾不同系统字体的适配原则是：英文 > 中文; 系统自带 > 动态加载。
