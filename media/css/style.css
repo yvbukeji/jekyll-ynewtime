@@ -1,11 +1,6 @@
+@charset "UTF-8";
 @import url("/media/css/pygments.css");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300");
-@font-face {
-  font-family: 'YaHei Consolas Hybrid';
-  src: url("/media/fonts/yaheiconsolashybrid.ttf"); }
-@font-face {
-  font-family: 'Consolas with Yahei Nerd';
-  src: url("/media/fonts/Consolas-with-Yahei-Nerd-Font.ttf"); }
 @font-face {
   font-family: 'Microsoft Yahei Mono';
   src: url("/media/fonts/Microsoft-YaHei-Mono.ttf"); }
@@ -15,9 +10,8 @@
 
 body {
   font-size: 16px;
-  font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
+  font-family: Georgia, Baskerville, Times New Roman, source-han-serif-sc, Microsoft YaHei, Georgia, Nimbus Roman No9 L, Songti SC, Noto Serif CJK SC, Source Han Serif SC, Source Han Serif CN, STSong, AR PL New Sung, AR PL SungtiL GB, NSimSun, SimSun, TW-Sung, WenQuanYi Bitmap Song, AR PL UMing CN, AR PL UMing HK, AR PL UMing TW, AR PL UMing TW MBE, PMingLiU, MingLiU, serif;
   color: #000000;
-  background: #f2f2f2 url("/media/files/bg/full-bloom.png");
   -webkit-font-smoothing: antialiased; }
 
 ol, ul {
@@ -33,28 +27,26 @@ hr {
   border-top: 1px dashed #999;
   border-bottom: 1px dashed #ffffff; }
 
-a, article .title a, article .meta .tags a, article .meta .author a, article .divider a {
+a, article .title a, article .divider a {
   text-decoration: none;
   color: #000000; }
-  a:hover, article .title a:hover, article .meta .tags a:hover, article .meta .author a:hover, article .divider a:hover {
+  a:hover, article .title a:hover, article .divider a:hover {
     color: #2bb6c9; }
 
 ::selection {
   color: #fff;
   background-color: #333; }
 
+@font-face {
+  font-family: '方正宋刻本秀楷繁体';
+  src: url("/media/fonts/方正宋刻本秀楷繁体.otf"); }
 blockquote {
-  margin: 1em 1em;
-  border-left: 2px dashed #999;
+  margin: 1em 0;
+  border-left: 2px dashed #909090;
   padding-left: 1em;
   font-size: 18px;
-  font-family: Baskerville, Georgia, "Liberation Serif", "source-han-serif-sc", Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW-Kai", serif, fantasy; }
-
-blockquote p:first-letter {
-  float: left;
-  margin: .2em .3em .1em 0;
-  font-size: 220%;
-  font-weight: bold; }
+  font-family: Georgia, Baskerville, "Times New Roman", "source-han-serif-sc", "Microsoft YaHei", Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif, fantasy;
+  color: #909090; }
 
 pre code {
   padding: 0 1em;
@@ -62,30 +54,30 @@ pre code {
   display: block;
   overflow: auto;
   font-size: .8em;
-  font-family: "Microsoft Yahei Mono", "Consolas with Yahei Nerd", "YaHei Consolas Hybrid", Consolas, -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif, monospace, monospace;
-  background-color: #f2f2f2;
+  font-family: "Microsoft Yahei Mono", Consolas, -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif, monospace, monospace;
+  background-color: #f8f8f8;
   border-left: 4px solid #2bb6c9;
   border-color: #2bb6c9 !important; }
 
 code {
   padding: .2em .2em;
   border: 1.5px dashed #909090;
-  font-family: "Microsoft Yahei Mono", "Consolas with Yahei Nerd", "YaHei Consolas Hybrid", Consolas, -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif, monospace, monospace; }
+  font-family: "Microsoft Yahei Mono", Consolas, -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif, monospace, monospace; }
 
 h1 {
-  font-size: 2em;
+  font-size: 32px;
   margin: 2em 0 .5em 0; }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 24px;
   margin: 2em 0 .5em 0; }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 20px;
   margin: 2em 0 .5em 0; }
 
 h4 {
-  font-size: 1em;
+  font-size: 18px;
   margin: 2em 0 .5em 0; }
 
 time {
@@ -129,7 +121,7 @@ header {
     top: 1em; }
     header nav span {
       margin: .5em; }
-    header nav a, header nav article .title a, article .title header nav a, header nav article .meta .tags a, article .meta .tags header nav a, header nav article .meta .author a, article .meta .author header nav a, header nav article .divider a, article .divider header nav a {
+    header nav a, header nav article .title a, article .title header nav a, header nav article .divider a, article .divider header nav a {
       font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
       color: #ccc; }
 
@@ -157,14 +149,19 @@ header {
 
 ul.listing {
   margin-top: 1em; }
+  ul.listing a {
+    color: #000000; }
+    ul.listing a:hover {
+      color: #2bb6c9; }
   ul.listing li {
     list-style-type: none;
     padding: 0; }
     ul.listing li.listing-item a {
-      border-bottom: 2px solid #2bb6c9;
       padding: .2em 0 .2em 0em; }
     ul.listing li.listing-item time {
-      color: #999; }
+      color: #2bb6c9;
+      margin: 0 .5em 0 0;
+      font-weight: bold; }
     ul.listing li.listing-item:hover {
       color: #2bb6c9; }
     ul.listing li.listing-seperator {
@@ -173,10 +170,10 @@ ul.listing {
       font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
       font-weight: bold; }
       ul.listing li.listing-seperator:before {
-        content: "<=== ";
+        content: "『　";
         color: #ccc; }
       ul.listing li.listing-seperator:after {
-        content: " ===>";
+        content: "　』";
         color: #ccc; }
 
 article {
@@ -184,24 +181,27 @@ article {
   article p {
     padding: .7em 0; }
   article .title {
-    font-family: Baskerville, Georgia, Liberation Serif, source-han-serif-sc, Baskerville, Georgia, Liberation Serif, Kaiti SC, STKaiti, AR PL UKai CN, AR PL UKai HK, AR PL UKai TW, AR PL UKai TW MBE, AR PL KaitiM GB, KaiTi, KaiTi_GB2312, DFKai-SB, TW-Kai, serif;
+    font-family: Georgia, Baskerville, Times New Roman, source-han-serif-sc, Microsoft YaHei, Georgia, Nimbus Roman No9 L, Songti SC, Noto Serif CJK SC, Source Han Serif SC, Source Han Serif CN, STSong, AR PL New Sung, AR PL SungtiL GB, NSimSun, SimSun, TW-Sung, WenQuanYi Bitmap Song, AR PL UMing CN, AR PL UMing HK, AR PL UMing TW, AR PL UMing TW MBE, PMingLiU, MingLiU, serif;
     font-weight: 700; }
-    article .title a, article .title .meta .tags a, article .meta .tags .title a, article .title .meta .author a, article .meta .author .title a {
+    article .title a {
       color: #777; }
   article .meta {
     display: block;
+    color: #909090;
     overflow: auto;
     margin-top: -.5em;
-    font-size: .9em; }
-    article .meta .tags a {
-      color: #999999;
-      padding: .25em; }
-    article .meta .author a {
-      color: #999999;
-      padding: .25em; }
-  article .post a, article .post .meta .tags a, article .meta .tags .post a, article .post .meta .author a, article .meta .author .post a {
+    font-size: .8em;
+    font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif; }
+    article .meta .item {
+      color: #909090; }
+      article .meta .item a {
+        color: #909090; }
+        article .meta .item a:hover {
+          color: #2bb6c9; }
+  article .post a {
     color: #000000;
-    border-bottom: 2px solid #2bb6c9; }
+    border-bottom: 2px solid #2bb6c9;
+    margin: 0 .1em; }
     article .post a:hover {
       color: #2bb6c9; }
   article .post img {
@@ -214,18 +214,19 @@ article {
     margin: 2em 0 0 0; }
     article .divider i {
       margin: 0 1em;
-      color: #999999; }
-    article .divider .meta .tags a, article .meta .tags .divider a, article .divider .meta .author a, article .meta .author .divider a, article .divider a {
+      color: #909090; }
+    article .divider a {
       font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
       margin: 0 1em; }
-      article .divider .meta .tags a i, article .meta .tags .divider a i, article .divider .meta .author a i, article .meta .author .divider a i, article .divider a i {
-        color: #999999;
+      article .divider a i {
+        color: #909090;
         margin: 0; }
         article .divider a i:hover {
           color: #2bb6c9 !important; }
   article .divider {
     position: relative;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-weight: bolder;
     z-index: 1;
     overflow: hidden;
     text-align: center; }
@@ -247,8 +248,9 @@ footer {
   display: block;
   color: #909090;
   font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
-  font-size: .9em;
-  text-align: center; }
+  font-size: .8em;
+  text-align: center;
+  margin-top: 5em; }
   @media screen and (min-width: 320px) {
     footer {
       width: 315px; } }
@@ -261,9 +263,9 @@ footer {
   @media screen and (min-width: 800px) {
     footer {
       width: 780px; } }
-  footer a, footer article .title a, article .title footer a, footer article .meta .tags a, article .meta .tags footer a, footer article .meta .author a, article .meta .author footer a, footer article .divider a, article .divider footer a {
+  footer a, footer article .title a, article .title footer a, footer article .divider a, article .divider footer a {
     color: #000000; }
-    footer a:hover, footer article .meta .tags a:hover, article .meta .tags footer a:hover, footer article .meta .author a:hover, article .meta .author footer a:hover {
+    footer a:hover {
       border-bottom: 2px solid #2bb6c9;
       color: #2bb6c9; }
 
@@ -358,11 +360,11 @@ table th, td {
 .poem {
   margin: 1em 0;
   padding: 1em 1em;
-  font-size: 18px;
-  background-color: #f2f2f2;
-  border: 1.5px dashed #D2E354;
-  border-left: 4px solid #D2E354;
-  font-family: Baskerville, Georgia, Liberation Serif, Kaiti SC, STKaiti, AR PL UKai CN, AR PL UKai HK, AR PL UKai TW, AR PL UKai TW MBE, AR PL KaitiM GB, KaiTi, KaiTi_GB2312, DFKai-SB, TW-Kai, serif; }
+  font-size: 16px;
+  background-color: #f8f8f8;
+  border-top: 1.5px dashed #909090;
+  border-bottom: 1.5px dashed #909090;
+  font-family: Georgia, Baskerville, Times New Roman, source-han-serif-sc, Microsoft YaHei, Georgia, Nimbus Roman No9 L, Songti SC, Noto Serif CJK SC, Source Han Serif SC, Source Han Serif CN, STSong, AR PL New Sung, AR PL SungtiL GB, NSimSun, SimSun, TW-Sung, WenQuanYi Bitmap Song, AR PL UMing CN, AR PL UMing HK, AR PL UMing TW, AR PL UMing TW MBE, PMingLiU, MingLiU, serif; }
 
 div.img {
   border: 1px solid #999; }

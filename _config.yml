@@ -7,7 +7,7 @@ name: 'Y' # put the site's name here
 permalink: /:title # the way you wanna your links look like ==> https://jekyllrb.com/docs/permalinks/
 
 description: "Your site's description" # put your site's description here
-author: "Stephen" # put your name here
+author: "Stephen Tseng" # put your name here
 atom-baseurl: "https://your-site-url" # the url for rss feed, you can change it to your site's url
 baseurl: "" # if you aren't publish your blog under permalink like: /blog/, you don't need change this, or change it to /your-repo's-name
 social: "https://twitter.com/your-username" # put your social links here

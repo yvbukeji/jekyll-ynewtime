@@ -22,37 +22,37 @@ $font-fang-song: Baskerville, "Times New Roman", "Liberation Serif", STFangsong,
 //$font-serif: 'Times New Roman', Georgia, 'Noto Serif CJK SC', 'Noto Serif CJK', "Source Han Serif SC", "source-han-serif-sc", "PingFang SC", "ten-mincho", "Source Han Serif", serif;
 
 //主字体
-$font: $font-hei;
+$font: Georgia, Baskerville, "Times New Roman", "source-han-serif-sc", "Microsoft YaHei", $font-song;
 
 //字体颜色
 $font-color: #000000;
 
 //代码字体
-@font-face{
-  font-family: 'YaHei Consolas Hybrid';
-  src : url('/media/fonts/yaheiconsolashybrid.ttf');
-}
-@font-face{
-  font-family: 'Consolas with Yahei Nerd';
-  src : url('/media/fonts/Consolas-with-Yahei-Nerd-Font.ttf');
-}
+//@font-face{
+//  font-family: 'YaHei Consolas Hybrid';
+//  src : url('/media/fonts/yaheiconsolashybrid.ttf');
+//}
+//@font-face{
+//  font-family: 'Consolas with Yahei Nerd';
+//  src : url('/media/fonts/Consolas-with-Yahei-Nerd-Font.ttf');
+//}
 @font-face{
   font-family: 'Microsoft Yahei Mono';
   src: url('/media/fonts/Microsoft-YaHei-Mono.ttf')
 }
-$monospace: 'Microsoft Yahei Mono', 'Consolas with Yahei Nerd', 'YaHei Consolas Hybrid', Consolas, $font-hei, monospace;
+$monospace: 'Microsoft Yahei Mono', Consolas, $font-hei, monospace;
 
 //blockquote字体
-$blockquote: Baskerville, Georgia, "Liberation Serif", "source-han-serif-sc", $font-kai;
+$blockquote: $font;
 
 //标签字体
 $label-font: $font-hei;
 
 //时间字体
-$time-font: "Ubuntu", $font-hei, monospace;
+$time-font: "Ubuntu", $label-font, monospace;
 
 //主背景颜色
-$background-color: #f2f2f2; //淡青，现代风格
+$background-color: rgb(248,248,248); //淡青，现代风格
 //$background-color: rgb(253, 246, 227); //Solarized，暖色
 //$background-color: #ffffff; //纯白，强调
 
@@ -63,10 +63,10 @@ $background-pattern: 'full-bloom.png';
 $highlight-color: #2bb6c9;
 
 //强调样式主颜色
-$poem-color: #D2E354;
+$poem-color: rgb(225, 255, 0);
 
 //强调样式字体
-$poem-font: $font-kai;
+$poem-font: $font;
 
 @mixin page {
   margin: 0 auto;
@@ -84,10 +84,9 @@ $poem-font: $font-kai;
 
 body { 
   font-size: 16px; 
-  //font-family: #{$font};
   font-family: #{$font};
-  color: #{$font-color}; 
-  background: $background-color url("/media/files/bg/#{$background-pattern}");
+  color: $font-color; 
+  //background: $background-color url("https://yenwtime-1255970624.cos.ap-guangzhou.myqcloud.com/bg/#{$background-pattern}");
   -webkit-font-smoothing: antialiased; 
 }
 
@@ -99,18 +98,23 @@ a { text-decoration: none; color: #{$font-color}; &:hover { color: #{$highlight-
 ::selection { color: #fff; background-color: #333; }
 
 //引用样式
+@font-face{
+  font-family: '方正宋刻本秀楷繁体';
+  src: url('/media/fonts/方正宋刻本秀楷繁体.otf')
+}
 blockquote {
-  margin: 1em 1em;
-  border-left: 2px dashed #999;
+  margin: 1em 0;
+  border-left: 2px dashed #909090;
   padding-left: 1em;
   font-size: 18px;
   font-family: $blockquote, fantasy; 
+  color: #909090;
 }
-blockquote p:first-letter {
-  float: left;
-  margin: .2em .3em .1em 0;
-  font-size: 220%;
-  font-weight: bold; }
+//blockquote p:first-letter {
+//  float: left;
+//  margin: .2em .3em .1em 0;
+//  font-size: 220%;
+//  font-weight: bold; }
 
 //代码块样式
 //长代码区
@@ -133,10 +137,10 @@ code {
 }
 
 //标题样式，最佳实践
-h1 { font-size: 2em; margin: 2em 0 .5em 0; }
-h2 { font-size: 1.5em; margin: 2em 0 .5em 0; }
-h3 { font-size: 1.17em; margin: 2em 0 .5em 0; }
-h4 { font-size: 1em; margin: 2em 0 .5em 0; }
+h1 { font-size: 32px; margin: 2em 0 .5em 0; }
+h2 { font-size: 24px; margin: 2em 0 .5em 0; }
+h3 { font-size: 20px; margin: 2em 0 .5em 0; }
+h4 { font-size: 18px; margin: 2em 0 .5em 0; }
 
 //博客上的时间样式
 time { font-family: #{$time-font} }
@@ -179,11 +183,12 @@ header {
 
 ul.listing {
   margin-top: 1em;
+  a { color: #{$font-color}; &:hover { color: #{$highlight-color}; }; }
   li {
     list-style-type:none;
     padding: 0;
-    &.listing-item { a {border-bottom: 2px solid #{$highlight-color}; padding: .2em 0 .2em 0em; } time { color: #999; } &:hover { color: #{$highlight-color}; } }
-    &.listing-seperator {margin:1em 0; font-size:1em;  font-family: #{$label-font}; font-weight: bold; &:before { content: "<=== "; color: #ccc; } &:after { content: " ===>"; color: #ccc; } }
+    &.listing-item { a { padding: .2em 0 .2em 0em; } time { color: #{$highlight-color};margin:0 .5em 0 0;font-weight:bold; } &:hover { color: #{$highlight-color}; } }
+    &.listing-seperator {margin:1em 0; font-size:1em;  font-family: #{$label-font}; font-weight: bold; &:before { content: "『　"; color: #ccc; } &:after { content: "　』"; color: #ccc; } }
   }
 }
 
@@ -191,39 +196,44 @@ article {
   margin: 2em 0;
   p { padding: .7em 0; }
   .title {
-    font-family: #{$blockquote};
+    font-family: #{$font};
     font-weight: 700;
     a { @extend a; color: #777; }
   }
 
   .meta {
     display: block;
+    color:#909090;
     overflow: auto;
     margin-top: -.5em;
-    font-size: .9em;
-    .tags a { @extend a; color: #999999; padding: .25em; }
-    .author a { @extend a; color: #999999; padding: .25em; }
+    font-size: .8em;
+    font-family: #{$label-font};
+    .item { 
+      color:#909090;
+      a { color:#909090; &:hover { color: #{$highlight-color};} }
+    }
   }
 
   .post { 
-    a { color: #{$font-color}; border-bottom: 2px solid #{$highlight-color}; &:hover { color: #{$highlight-color}; }; }
+    a { color: #{$font-color}; border-bottom: 2px solid #{$highlight-color}; margin:0 .1em; &:hover { color: #{$highlight-color}; }; }
     img { max-width: 100%; display: block; margin: .5em auto; } }
 
   .comment { margin: 3em 0; }
   .divider {
     margin: 2em 0 0 0;
 
-    i { margin: 0 1em; color: #999999; }
+    i { margin: 0 1em; color: #909090; }
 
     a { @extend a;
       font-family: #{$label-font};
       margin: 0 1em;
-      i { color: #999999; margin: 0; &:hover { color: #{$highlight-color} !important; } }
+      i { color: #909090; margin: 0; &:hover { color: #{$highlight-color} !important; } }
     }
   }
   .divider {
     position: relative;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-weight: bolder;
     z-index: 1;
     overflow: hidden;
     text-align: center;
@@ -245,9 +255,10 @@ footer {
   @include page;
   display: block;
   color: #909090;
-  font-family: #{$font-hei};
-  font-size: .9em;
+  font-family: #{$label-font};
+  font-size: .8em;
   text-align: center;
+  margin-top: 5em;
   //margin: 1em auto;
   a { color: #{$font-color}; &:hover {  border-bottom: 2px solid #{$highlight-color}; color: #{$highlight-color}; }; }
 }
@@ -328,7 +339,7 @@ img + em {
 // table
 table{
   // background-color: #fafafa;
-  // background: url("/media/bg/type.png") repeat;
+  // background: url("https://yenwtime-1255970624.cos.ap-guangzhou.myqcloud.com/bg/type.png") repeat;
   border-left: 2px solid #{$highlight-color};
   border-top: 2px solid #{$highlight-color};
   border-collapse: collapse;
@@ -360,13 +371,13 @@ table th,td{
 // 长段文字的说明栏
 .poem {
   //你可以反注释掉这一行来启用 .poem 的背景
-  //background: url("/media/bg/type.png") repeat;
+  //background: url("https://yenwtime-1255970624.cos.ap-guangzhou.myqcloud.com/bg/type.png") repeat;
   margin: 1em 0;
   padding: 1em 1em;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #{$background-color};
-  border: 1.5px dashed #{$poem-color};
-  border-left: 4px solid #{$poem-color};
+  border-top: 1.5px dashed #909090;
+  border-bottom: 1.5px dashed #909090;
   font-family: #{$poem-font};
 }
 
@@ -417,4 +428,3 @@ div.desc {
 //给某段文字赋予居中显示样式
 //使用：下一段非隔行添加 {:.center}
 .center { text-align: center; }
-
