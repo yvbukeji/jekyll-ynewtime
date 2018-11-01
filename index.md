@@ -11,18 +11,18 @@ layout: default
     <section class="meta">
     <span class="item">
       <time datetime="{{ post.date }}" style="font-weight: bold"><i class="fa fa-calendar"></i> {{ post.date | date:"%Y-%m-%d" }}</time>
-    </span>|
+    </span> | 
     {% if post.author %} 
-      <span class="item"><i class="fa fa-copyright"></i> {{ post.author }} </span> |
+      <span class="item"><i class="fa fa-copyright"></i> {{ post.author }} </span> | 
       {% else %} 
-      <span class="item"><i class="fa fa-copyright"></i> 原创 </span> |
+      <span class="item"><i class="fa fa-copyright"></i> 原创 </span> | 
     {% endif %}
     {% if post.tags %}  
     <span class="item">
       {% for tag in post.tags %}
       <a href="/tags#{{ tag }}" title="{{ tag }}" style="color:#909090;"><i class="fa fa-tag"></i> {{ tag }}</a>
       {% endfor %}
-    </span>
+    </span> | 
     {% endif %}
     <span class="item" id="busuanzi_container_page_pv">
       <i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv" style="font-weight: bold"></span>
