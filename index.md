@@ -24,11 +24,9 @@ layout: default
       {% endfor %}
     </span>
     {% endif %}
-      <!--
-   <span class="item" id="busuanzi_container_page_pv">
+    <span class="item" id="busuanzi_container_page_pv">
       <i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv" style="font-weight: bold"></span>
     </span>
-    -->
     </section>
     <hr>
     <section class="post">

@@ -200,8 +200,7 @@ article {
           color: #2bb6c9; }
   article .post a {
     color: #000000;
-    border-bottom: 2px solid #2bb6c9;
-    margin: 0 .1em; }
+    border-bottom: 2px solid #2bb6c9; }
     article .post a:hover {
       color: #2bb6c9; }
   article .post img {
@@ -305,7 +304,7 @@ footer {
   padding-top: 100%; }
 
 .small {
-  zoom: 50%; }
+  zoom: 0.5; }
 
 @font-face {
   font-family: 'Jing-Lei';
